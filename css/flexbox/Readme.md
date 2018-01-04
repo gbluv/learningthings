@@ -1,3 +1,8 @@
+This code is based on videos from [academind](https://www.youtube.com/channel/UCSJbGtTlrDami-tDGPUV9-w)
+
+Youtube: [flexboxcss](https://www.youtube.com/watch?v=siKKg8Y_tQY)
+
+
 **flex-basis** defines an item's size depending on the main axes 
 
 **flex-grow** if flex-flow is nowrap will have the same size for both blexes 
