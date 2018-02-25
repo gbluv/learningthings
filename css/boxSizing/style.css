@@ -1,0 +1,47 @@
+html {
+    background-color: grey;
+    padding: 10px;
+}
+
+body {
+    background-color: rgb(255, 166, 0);
+    padding: 10px;
+}
+
+.navigation {
+    background-color: white;
+    border: 5px solid black;
+    padding: 20px;
+    position: relative;
+}
+
+.nested {
+    background-color: #c52dc3;
+    color: white;
+    padding: 20px;
+    border: 5px solid #521751;
+}
+/* box-sizing properties:
+    content-size only sets size by the content without including borders
+    border-box: includes borders in size.
+
+ */
+
+/* 3 rules of how box size is calculated
+
+    1. positioning: size of the element depends on the containing block.
+        in case of fixed containing element is the VIEWPORT
+    2. position absolute: containing element is the ANCESTOR + Content + Padding. Also it should be closesed element
+    with position absolute, relative or sticky. If you wrap it in a regular div it will not make any difference.
+
+    3. position static or relative(default): ancestor only content (any containing element basically)
+ */
+
+.content {
+    background-color: rgb(60, 97, 218);
+    color: white;
+    border: 5px solid #521751;
+    width: 300px;
+    box-sizing: border-box;
+    position: absolute;
+}
