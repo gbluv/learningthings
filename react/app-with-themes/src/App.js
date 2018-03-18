@@ -5,6 +5,10 @@ import Panel from './components/Panel';
 
 import Locale from './localles/Locale';
 
+import {RXJSServerComponent} from './components/RXJSServerComponent';
+import RXJSClient from './components/RXJSClient';
+
+
 // https://medium.com/@mweststrate/how-to-safely-use-react-context-b7e343eff076
 const {
   object
@@ -42,6 +46,9 @@ class App extends Component {
         <button onClick={() => this.changeLocale('en')}>EN</button>
         <button onClick={() => this.changeLocale('ru')}>RU</button>
         <Panel/>
+        <h1>RXJS Communications</h1>
+        <RXJSServerComponent/>
+        <RXJSClient />
       </div>
     );
   }
