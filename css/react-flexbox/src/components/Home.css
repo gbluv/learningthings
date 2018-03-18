@@ -1,0 +1,57 @@
+html{
+	padding: 10px;
+}
+
+body{
+	padding: 10px;
+	margin: 0;
+}
+
+
+/* flex-basis defines an item's size depending on the main axes */
+
+/* flex-grow: if flex-flow is nowrap will have the same size for both blexes */
+/* flex-grow: if you have grow 1 and grow 2, grow2 will grow bigger */
+/* align-self: defines how item is position in relation to cross access */
+/* justify-content: defines position of items along MAIN access */
+/* align-items: defines position on CROSS axes */
+/* flex-flow: row and nowrap are default values */
+/* wrap will also decrease the size of the wrapped item in order to feet it in a container */
+
+/* flex will stretch all the way */
+/* inline-flex: will only stretch enough to feet the content */
+
+.parent div{
+	background-color: #f800db;
+	margin: 5px;
+}
+.div1{
+}
+
+.div2{
+	width: 150px;
+	font-size: 30px;
+}
+
+.div3{
+	height: 150px;
+}
+
+.div4{
+	width: 150px;
+	height: 150px;
+}
+
+/* in this case for flex-bases, it sees that the flex-flow is row
+	so the main axes is horizontal so that the flex-basis will affect
+	width. In this example flex-basis will overwrite width and set it to 100
+	if you change the flex-flow to column flex-basis will affect the height of an element
+ */
+.div5{
+	width: 200px;
+	flex: 1 1 100px; /* flex-grow, flex-shrink flex-basis*/
+}
+.div6{
+	width: 200px;
+	flex: 2 5 auto;
+}
