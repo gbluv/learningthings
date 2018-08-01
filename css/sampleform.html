@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<header>
+
+</header>
+<body>
+<style type="text/css">
+	.searchMarketWorkflowId {
+		display: flex;
+		font-size: 16px;
+		width: 60%;
+	}
+
+	.searchMarketWorkflowId .form-group {
+		width: 30%;
+	}
+
+	.searchMarketWorkflowId label {
+		display: block;
+		font-weight: bolder;
+		text-transform: uppercase;
+	}
+
+	.searchMarketWorkflowId .form-group {
+		padding: 20px 5px;
+	}
+
+	.searchMarketWorkflowId .form-group.buttons-holder{
+		border: 1px solid green;
+		padding: 0;
+		margin: 0;
+		display: flex;
+	}
+
+	.searchMarketWorkflowId .form-group.buttons-holder button{
+		align-self: flex-end;
+	}
+
+	.searchMarketWorkflowId .form-group.buttons-holder button{
+		height: 20px;
+	}
+
+	.searchMarketWorkflowId label {
+		margin: 12px auto;
+		width: 100%;
+
+	}
+	.searchMarketWorkflowId label sup{
+		color: orangered;
+		margin-left: 2px;
+	}
+
+	.searchMarketWorkflowId input[type='text'] {
+		height: 20px;
+		width: 98%;
+	}
+
+	.searchMarketWorkflowId select {
+		height: 25px;
+		width: 100%
+	}
+</style>
+<form class="searchMarketWorkflowId">
+	<div class="form-group">
+		<label for="cptyName">CPTY NAME<sup>*</sup></label>
+		<input type="text" name="cptyName" id="cptyName"/>
+
+	</div>
+	<div class="form-group">
+		<label for="assetClass">ASSET CLASS<sup>*</sup></label>
+		<select id="assetClass" name="assetClass">
+			<option>1</option>
+			<option>1</option>
+			<option>1</option>
+			<option>1</option>
+			<option>1</option>
+		</select>
+	</div>
+	<div class="form-group">
+		<label for="marketWireID">Market Wire ID<sup>*</sup></label>
+		<input type="text" name="marketWireID" id="marketWireID"/>
+	</div>
+	<div class="form-group buttons-holder">
+		<button>Reset</button>
+		<button>Search</button>
+	</div>
+
+</form>
+
+</body>
+
+</html>
